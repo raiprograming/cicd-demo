@@ -15,7 +15,7 @@ class Counter extends Component {
               className="btn btn-secondary"
               onClick={() => this.props.onIncrement(this.props.counter)}
             >
-              <i className="fa fa-plus-circle" aria-hidden="true" />
+              <i data-testid={`increment${this.props.counter.id}`} className="fa fa-plus-circle" aria-hidden="true" />
             </button>
             <button
               className="btn btn-info m-2"
