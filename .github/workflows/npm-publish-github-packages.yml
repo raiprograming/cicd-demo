@@ -15,6 +15,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '16.x'
+    - name: Setup git user
+      run: |
+          git config --global user.name "shivam rai"
+          git config --global user.email "raishivam2304@gmail.com"
     - name: install
       run: npm i --force
     - name: Run tests
