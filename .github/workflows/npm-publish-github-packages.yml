@@ -16,7 +16,7 @@ jobs:
       with:
         node-version: '16.x'
     - name: install
-      run: npm i --legacy-peer-deps
+      run: npm i --force
     - name: Run tests
       run: npm test
     - name: Build
