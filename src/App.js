@@ -28,7 +28,7 @@ class App extends Component {
     this.setState({ counters });
   };
 
-  handleReset1 = () => {
+  handleReset = () => {
     const counters = this.state.counters.map((c) => {
       c.value = 0;
       return c;
@@ -57,7 +57,7 @@ class App extends Component {
             />
             <Counters
               counters={this.state.counters}
-              onReset={this.handleReset1}
+              onReset={this.handleReset}
               onIncrement={this.handleIncrement}
               onDecrement={this.handleDecrement}
               onDelete={this.handleDelete}
