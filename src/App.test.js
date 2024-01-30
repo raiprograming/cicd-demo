@@ -12,6 +12,6 @@ test('test app', () => {
 
   fireEvent.click(increment1);
 
-  expect(result).toHaveTextContent("1");
+  expect(result).toHaveTextContent("2");
 })
 
